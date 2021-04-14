@@ -7,6 +7,17 @@ export default function Home() {
       <Head>
         <title>cailong.me</title>
         <link rel="icon" href="/favicon.ico" />
+        <script dangerouslySetInnerHTML={{
+            __html: `
+            if (typeof window !== "undefined") {
+              window.__bl = {
+                config: {
+                  pid: "brw5qo9e5q@5ee571d5cded5e1",appType:"web",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?",sendResource:true,enableLinkTrace:true,behavior:true,useFmp:true
+                }
+              }
+            }`
+        }} />
+        <script type="text/javascript" src="https://retcode.alicdn.com/retcode/bl.js" crossorigin></script>
       </Head>
 
       <main className={styles.main}>
